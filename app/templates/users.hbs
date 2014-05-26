@@ -1,0 +1,9 @@
+<h1>Users</h1>
+{{#link-to 'user.create'}}Add New User{{/link-to}}
+<ul>
+ {{#each model}}
+ <li>{{#link-to 'user' this}}{{this.id}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+Total Users: {{totalItems}}
+{{outlet}}
